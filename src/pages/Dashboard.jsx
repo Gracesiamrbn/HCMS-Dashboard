@@ -16,7 +16,6 @@ import {
   Bell,
   Search,
   User,
-  LogOut,
   Building,
   FileText,
   BarChart3,
@@ -150,14 +149,7 @@ function Sidebar() {
         ))}
       </nav>
 
-      {!isCollapsed && (
-        <div className="absolute bottom-4 left-4 right-4">
-          <button className="w-full flex items-center space-x-3 px-4 py-3 text-left hover:bg-gray-800 rounded-lg transition-colors">
-            <LogOut className="w-5 h-5" />
-            <span>Logout</span>
-          </button>
-        </div>
-      )}
+      {!isCollapsed && <div className="absolute bottom-4 left-4 right-4"></div>}
     </div>
   );
 }
